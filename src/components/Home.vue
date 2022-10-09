@@ -39,7 +39,7 @@ export default {};
                 <h6 class="card-subtitle mb-2 text-muted">
                   <span>解决痛点：</span>没有启发创意的信息来源
                 </h6>
-                <ul>
+                <ul class="li-list">
                   <li>资深客户成功专家对接</li>
                   <li>调研项目背景、预算 、方向 、交付时间和地点</li>
                   <li>输出类似案例信息</li>
@@ -55,7 +55,7 @@ export default {};
                 <h6 class="card-subtitle mb-2 text-muted">
                   <span>解决痛点：</span>资源不独特
                 </h6>
-                <ul>
+                <ul class="li-list">
                   <li>全球前沿资源调取，多维度提供推荐嘉宾list</li>
                   <li>设计可行的活动形式，提供多样形式参考</li>
                   <li>方案对接会，根据反馈修改方案</li>
@@ -70,7 +70,7 @@ export default {};
                 <h6 class="card-subtitle mb-2 text-muted">
                   <span>解决痛点：</span>性价比
                 </h6>
-                <ul>
+                <ul class="li-list">
                   <li>确定最合适的嘉宾</li>
                   <li>确定最合适的活动形式</li>
                   <li>制定项目交付timeline</li>
@@ -85,7 +85,7 @@ export default {};
                 <h6 class="card-subtitle mb-2 text-muted">
                   <span>解决痛点：</span>方案与实际落地出入大
                 </h6>
-                <ul>
+                <ul class="li-list">
                   <li>管理项目时间交付线</li>
                   <li>嘉宾客户火星三方对接会，高质量信息传递</li>
                   <li>打磨出能被记住、能被传播的知识主题和内容</li>
@@ -102,7 +102,7 @@ export default {};
                 <h6 class="card-subtitle mb-2 text-muted">
                   <span>解决痛点：</span>复盘无法展示真实情况
                 </h6>
-                <ul>
+                <ul class="li-list">
                   <li>针对活动目标设计复盘模板</li>
                   <li>协助主办方收集用户反馈</li>
                   <li>组织项目小组复盘会</li>
@@ -127,35 +127,34 @@ export default {};
         <div class="row">
           <div class="col-md-4">
             <div class="card home-card">
-              <img src="./../assets/01.png" class="card-img-top" alt="..." />
+              <img src="https://hackweek-1251009918.cos.ap-shanghai.myqcloud.com/themartians/p1.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">张晓岩 Flora Zhang</h5>
+                <h5 class="card-title">Flora Zhang </h5>
                 <p class="card-text">
-                  lululemon前中国中 国区一号员工lululemon中国社群建立者，帮助lululemon成功的在 中国实现从0到1的转变。现奢侈滑雪服公司BOGNER中国市场和数字业务负责人
+                  lululemon前中国中国区一号员工lululemon中国社群建立者，帮助lululemon成功的在中国实现从0到1的转变。现奢侈滑雪服公司BOGNER中国市场和数字业务负责人
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card home-card">
-              <img src="./../assets/02.png" class="card-img-top" alt="..." />
+              <img src="https://hackweek-1251009918.cos.ap-shanghai.myqcloud.com/themartians/p2.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">张磊</h5>
+                <h5 class="card-title">Jonathan Zhang</h5>
                 <p class="card-text">
-                  原华为高端招聘总监，资深企业管理&人力资本专家，500强企业金牌讲师，擅长企业运营管理以及人力资源管理，战略规划与落地，商业模式探索及迭代，公司管理体系、流程及制度构建等。
+                  喜马拉雅前HRVP，华为前高端招聘总监，首熙国际贸易前CEO，盒淘优选前CEO，500强企业金牌讲师，东北大学客座教授，清华大学职业生涯教练，天津卫视《非你莫属》栏目特HR专家，LinkedIn专栏撰稿人
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card home-card">
-              <img src="./../assets/03.png" class="card-img-top" alt="..." />
+              <img src="https://hackweek-1251009918.cos.ap-shanghai.myqcloud.com/themartians/p3.png" class="card-img-top" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">Leeann</h5>
+                <h5 class="card-title">Leeann Tang</h5>
                 <p class="card-text">
-                  lululemon前中国中国区一号员工lululemon中国社群
-                建立者，帮助lululemon成功的在 中国实现从0到1的转变。现奢侈滑雪服公司
-                BOGNER中国市场和数字业务负责人
+                  曾任lululemon上海新天地门店副店长，见证新天地店从正式店发展到中国第一家旗舰店的全流程；后担任lululemon中国品牌执行，深度策划并参与各类社群项目
+如：2019上海深坑酒店lululemon全球首场T台秀；2018心展中国系列活动等
                 </p>
               </div>
             </div>
@@ -170,7 +169,7 @@ export default {};
 .banner-img {
   width: 100%;
   height: 300px;
-  background-image: url(./../assets/huoxing.jpeg);
+  background-image: url(https://hackweek-1251009918.cos.ap-shanghai.myqcloud.com/themartians/huoxing.jpeg);
   background-position: left top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -178,7 +177,7 @@ export default {};
 
 #speaker {
   width: 100%;
-  background-image: url(./../assets/landing-schedules-slider-bckg-img.webp);
+  background-image: url(https://hackweek-1251009918.cos.ap-shanghai.myqcloud.com/themartians/landing-schedules-slider-bckg-img.webp);
   background-position: left top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -196,7 +195,16 @@ export default {};
   background-color: rgba(0, 0, 0, 0.9);
 }
 .speaker-content .card-text{
-  font-size: 14px;
+  height: 130px;
+  font-size: 12px;
+  line-height: 18px;
+  color:#969696
 }
+.li-list{
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+
 
 </style>

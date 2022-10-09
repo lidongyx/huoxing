@@ -82,9 +82,18 @@ button:focus-visible {
   padding-top: 30px;
 }
 .process-tabs li{
-  border: 1px solid red !important;
+  border: none !important;
+  font-weight: 400;
 }
 
+.process-tabs .nav-link{
+  font-weight: 600;
+  color: #000;
+}
+
+.process-tabs .active{
+  color: #e7b94e !important;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
