@@ -1,12 +1,10 @@
-<script setup></script>
-
 <template>
   <header id="site-header">
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img height="40px" src="https://themartians.co/wp-content/uploads/2021/07/logo-rgb.png" class="custom-logo" alt="火星未来">
+            <img height="40px" src="https://hackweek-1251009918.cos.ap-shanghai.myqcloud.com/themartians/logo-rgb.png" class="custom-logo" alt="火星未来">
           </a>
           <button
             class="navbar-toggler"
@@ -50,3 +48,4 @@
   margin-left: auto;
 }
 </style>
+

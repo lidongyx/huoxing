@@ -79,7 +79,17 @@ button:focus-visible {
 .section{
   display: block;
   margin: 30px auto;
-  padding-top: 30px;
+  padding: 30px;
+}
+
+.nav-item a{
+  display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 .process-tabs li{
   border: none !important;
