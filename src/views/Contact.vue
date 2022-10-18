@@ -1,4 +1,12 @@
 <script>
+import axios from "axios";
+async function postData(params) {
+  const url = "https://hackweek-1302178265.ap-shanghai.app.tcloudbase.com/num"
+  const result = (await axios.post(url,params)).data
+  console.log("返回的结果",result)
+  return "ok"
+}
+
 export default {
   data() {
     return {
@@ -25,12 +33,36 @@ export default {
     increment() {
       this.count++;
     },
-    submit() {
-      const {require} = this
+    async submit() {
+      const {orgname,require,eventback,time,eventname} = this
       console.log("项目名称", this.eventname);
       console.log("项目名称", require);
 
+      const params = {
+      orgname: orgname,
+      eventname: eventname,
+      eventback: eventback,
+      time:time,
+      duration:'',
+      channel:'',
+      modus:'',
+      project:'',
+      ann:'',
+      anno:'',
+      audi:'',
+      audiNum:'',
+      auditarget:'',
+      require:'',
+      content:'',
+      time:'',
+    }
 
+    const postresult = await postData(params)
+    console.log("啥结果",postresult)
+
+    if(postresult == "ok"){
+      this.show = true
+    }
     },
   },
   mounted() {
