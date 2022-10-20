@@ -91,7 +91,7 @@ export default {
     </div>
   </section>
 
-  <section>
+  <section id="contact">
     <div class="container">
       <form @submit.prevent="submit">
         <div class="mb-3">
@@ -275,5 +275,8 @@ export default {
 }
 .alert{
   margin-top: 30px;
+}
+#contact{
+  margin-bottom: 100px;
 }
 </style>

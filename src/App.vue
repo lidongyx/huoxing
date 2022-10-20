@@ -1,12 +1,16 @@
 
 <template>
-
-    <header id="site-header">
+  <header id="site-header" class="d-none d-md-block">
     <div class="container">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
-            <img height="40px" src="https://hackweek-1251009918.cos.ap-shanghai.myqcloud.com/themartians/logo-rgb.png" class="custom-logo" alt="火星未来">
+            <img
+              height="40px"
+              src="https://hackweek-1251009918.cos.ap-shanghai.myqcloud.com/themartians/logo-rgb.png"
+              class="custom-logo"
+              alt="火星未来"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -25,13 +29,19 @@
                 <a class="nav-link" href="#"><router-link to="/"> 首页 </router-link></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><router-link to="/sort">嘉宾分类</router-link></a>
+                <a class="nav-link" href="#"
+                  ><router-link to="/sort">嘉宾分类</router-link></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><router-link to="/special">诺奖嘉宾</router-link></a>
+                <a class="nav-link" href="#"
+                  ><router-link to="/special">诺奖嘉宾</router-link></a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"><router-link to="/contact">联系我们</router-link></a>
+                <a class="nav-link" href="#"
+                  ><router-link to="/contact">联系我们</router-link></a
+                >
               </li>
             </ul>
           </div>
@@ -41,7 +51,7 @@
   </header>
   <router-view />
 
-  <footer id="footer" class="site-footer">
+  <footer id="footer" class="site-footer d-none d-md-block">
     <div class="container">
       <div>
         <div>
@@ -72,15 +82,52 @@
     </div>
   </footer>
 
+  <footer id="mfoooter" class="fixed-bottom d-md-none">
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item">
+        <div class="navbar-link show" aria-current="page">
+          <router-link to="/"
+            >
+            <p><font-awesome-icon icon="fa-solid fa-house-user" /></p>
+            <p>首页</p>
+          </router-link>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="navbar-link show">
+          <router-link to="/sort">
+            <p><font-awesome-icon icon="fa-solid fa-user-secret" /></p>
+            <p>嘉宾分类</p>
+          </router-link>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="navbar-link show">
+          <router-link to="/special">
+            <p><font-awesome-icon icon="fa-solid fa-book-open-reader" /></p>
+            <p>诺奖嘉宾</p>
+          
+          </router-link>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="navbar-link show"><router-link to="/contact">
+          <p><font-awesome-icon icon="fa-solid fa-user-tie" /></p>
+            <p>联系我们</p>
+        
+        </router-link></div>
+      </li>
+    </ul>
+  </footer>
 </template>
 
 <style scoped>
-.navbar-brand img{
+.navbar-brand img {
   height: 40px;
 }
 #site-header {
   display: block;
-  border:1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 #topnav {
   margin-left: auto;
@@ -100,7 +147,7 @@
 #footer p {
   color: #969696;
 }
-.foot-pic{
+.foot-pic {
   display: block;
   overflow: hidden;
   text-align: center;
@@ -109,7 +156,7 @@
 img.foot-logo {
   height: 40px;
 }
-.menu-list{
+.menu-list {
   padding-top: 15px;
 }
 p.menu {
@@ -121,5 +168,13 @@ p.beian {
   text-align: center;
   font-size: 12px;
   line-height: 1.6;
+}
+#mfoooter {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.navbar-link p{
+  margin-bottom: 0;
 }
 </style>

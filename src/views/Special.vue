@@ -10,7 +10,7 @@ export default defineComponent({
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2>嘉宾分类</h2>
+        <h2>诺奖嘉宾</h2>
         <div></div>
       </div>
       <div class="section-content">
