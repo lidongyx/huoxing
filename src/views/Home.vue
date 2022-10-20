@@ -228,9 +228,18 @@ export default defineComponent({
   line-height: 18px;
   color: #969696;
 }
+.text-muted{
+  margin: 10px 0;
+}
 .li-list {
   margin-top: 15px;
   margin-left: -15px;
+}
+.li-list li{
+  font-size: 16px;
+  font-weight: 300;
+  color: #0d0a05;
+  line-height: 2rem;
 }
 
 #footer {
