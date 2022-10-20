@@ -33,7 +33,15 @@ export default defineComponent({
 
   <section id="process" class="section">
     <div class="container">
-      <div>
+      <div class="section-header">
+        <h2>嘉宾业务流程</h2>
+      </div>
+      <div class="section-content">
+        <div class="section-p">
+          针对游学&培训需求、活动嘉宾邀请和其他需要和全球各界行业领袖的合作
+        </div>
+      </div>
+      <div class="process-content">
         <b-tabs content-class="mt-3" nav-class="process-tabs">
           <b-tab title="① 需求沟通会" active nav-wrapper-class="process-tab">
             <div class="card">
@@ -192,7 +200,9 @@ export default defineComponent({
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.process-content{
+  margin-top: 40px;
+}
 #speaker {
   width: 100%;
   background-image: url(https://hackweek-1251009918.cos.ap-shanghai.myqcloud.com/themartians/landing-schedules-slider-bckg-img.webp);
