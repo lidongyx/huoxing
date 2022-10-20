@@ -1,3 +1,13 @@
+<script>
+export default {
+  data(){
+    return {
+      tabchange:"active"
+    }
+  }
+}
+
+</script>
 
 <template>
   <header id="site-header" class="d-none d-md-block">
@@ -85,7 +95,7 @@
   <footer id="mfoooter" class="fixed-bottom d-md-none">
     <ul class="nav nav-pills nav-fill">
       <li class="nav-item">
-        <div class="navbar-link show" aria-current="page">
+        <div class="navbar-link {{tabchange}}" aria-current="page">
           <router-link to="/"
             >
             <p><font-awesome-icon icon="fa-solid fa-house-user" /></p>
@@ -94,7 +104,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <div class="navbar-link show">
+        <div class="navbar-link">
           <router-link to="/sort">
             <p><font-awesome-icon icon="fa-solid fa-user-secret" /></p>
             <p>嘉宾分类</p>
@@ -102,7 +112,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <div class="navbar-link show">
+        <div class="navbar-link">
           <router-link to="/special">
             <p><font-awesome-icon icon="fa-solid fa-book-open-reader" /></p>
             <p>诺奖嘉宾</p>
@@ -111,7 +121,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <div class="navbar-link show"><router-link to="/contact">
+        <div class="navbar-link"><router-link to="/contact">
           <p><font-awesome-icon icon="fa-solid fa-user-tie" /></p>
             <p>联系我们</p>
         
@@ -174,7 +184,15 @@ p.beian {
   background-color: #fff;
 }
 
+.navbar-link a{
+  color: #0d0a05;
+}
+.navbar-link .router-link-active{
+  color: #fada57;
+  font-weight: bold;
+}
 .navbar-link p{
   margin-bottom: 0;
 }
+
 </style>
