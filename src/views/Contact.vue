@@ -34,27 +34,26 @@ export default {
       this.count++;
     },
     async submit() {
-      const {orgname,require,eventback,time,eventname} = this
-      console.log("项目名称", this.eventname);
-      console.log("项目名称", require);
+      // const {orgname,require,eventback,time,eventname} = this
+      // console.log("项目名称", this.eventname);
+      // console.log("项目名称", require);
 
       const params = {
-      orgname: orgname,
-      eventname: eventname,
-      eventback: eventback,
-      time:time,
-      duration:'',
-      channel:'',
-      modus:'',
-      project:'',
-      ann:'',
-      anno:'',
-      audi:'',
-      audiNum:'',
-      auditarget:'',
-      require:'',
-      content:'',
-      time:'',
+      orgname: this.orgname,
+      eventname: this.eventname,
+      eventback: this.eventback,
+      time:this.time,
+      duration:this.duration,
+      channel:this.channel,
+      modus:this.modus,
+      project:this.project,
+      ann:this.ann,
+      anno:this.anno,
+      audi:this.audi,
+      audiNum:this.audiNum,
+      auditarget:this.auditarget,
+      require:this.require,
+      content:this.content,
     }
 
     const postresult = await postData(params)
