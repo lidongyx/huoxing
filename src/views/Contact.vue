@@ -1,7 +1,7 @@
 <script>
 import axios from "axios";
 async function postData(params) {
-  const url = "https://hackweek-1302178265.ap-shanghai.app.tcloudbase.com/num"
+  const url = "https://hackweek-1302178265.ap-shanghai.app.tcloudbase.com/hxfunction"
   const result = (await axios.post(url,params)).data
   console.log("返回的结果",result)
   return "ok"
@@ -43,6 +43,7 @@ export default {
       eventname: this.eventname,
       eventback: this.eventback,
       time:this.time,
+      cloud:this.cloud,
       duration:this.duration,
       channel:this.channel,
       modus:this.modus,
@@ -50,11 +51,15 @@ export default {
       ann:this.ann,
       anno:this.anno,
       audi:this.audi,
+      audiDesc:this.audiDesc,
       audiNum:this.audiNum,
       auditarget:this.auditarget,
+      problem:this.problem,
       require:this.require,
       content:this.content,
     }
+
+    console.log("传入的参数",params)
 
     const postresult = await postData(params)
     console.log("啥结果",postresult)
@@ -131,7 +136,7 @@ export default {
         </div>
         <div class="mb-3">
           <label for="name1" class="form-label">线上/线下</label>
-          <select class="form-select" aria-label="Default select example">
+          <select class="form-select" aria-label="Default select example" v-model="cloud">
             <option selected value="1">线上</option>
             <option value="2">线下</option>
           </select>
@@ -212,7 +217,7 @@ export default {
           <label for="name1" class="form-label">职位状况</label>
           <input
             class="form-control"
-            id="audiNum"
+            id="audiDesc"
             v-model="audiDesc"
             placeholder="如总监、部门经理、部门经理、部门职员的人数情况"
           />
